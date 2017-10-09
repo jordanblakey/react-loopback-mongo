@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
 
 class Meetups extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
   render() {
     return (
       <div>
-        <h1>Meetups</h1>
+        <h1>{Meetups}</h1>
       </div>
-    )
+    );
   }
 }
 

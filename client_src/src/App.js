@@ -6,16 +6,19 @@ import {Link} from 'react-router-dom';
 
 const App = () => (
   <div>
-    <Navbar/>
+    <Navbar />
     <div className='container'>
-      <Main/>
+      <Main />
     </div>
     <div className='fixed-action-btn'>
-      <Link to="/meetups/add" className="btn-floating btn-large red">
-        <i className='fa fa-plus'></i>
+      <Link
+        className="btn-floating btn-large red"
+        to="/meetups/add"
+      >
+        <i className='fa fa-plus' />
       </Link>
     </div>
   </div>
-)
+);
 
 export default App;
