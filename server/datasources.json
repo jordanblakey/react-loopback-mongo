@@ -1,11 +1,11 @@
 {
-  "db": {
+  "mongoDS": {
     "host": "localhost",
     "port": 27017,
     "url": "",
     "database": "meetupz-app",
     "password": "",
-    "name": "db",
+    "name": "mongoDS",
     "user": "",
     "connector": "mongodb"
   }

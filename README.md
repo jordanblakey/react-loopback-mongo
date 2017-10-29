@@ -1,5 +1,9 @@
 # React Loopback Mongo
 
+1. Mongo Runs on :27017 `./$ mongod`
+1. Loopback Runs on :3000 `./$ node .`
+1. React Runs on :3001 `./client_src/$ yarn start`
+
 ## Project Installation Steps
 
 1. `git clone git@github.com:jordanblakey/react-loopback-mongo.git`
@@ -92,15 +96,19 @@ Query into MongoDB in the 'mongo' CLI:
 - `db`: Get current DB
 - `show dbs`: Show all Databases
 - `use <database>`: Change to/create DB
-Drop current database (argument to drop `db.dropDatabase();`: other)
-- `db.help()`: Show help for an db object
+- `db.dropDatabase();`: Drop current database
+
 - `show collections`: Show all collections
-- `db.help()`: Show help for an collection object
-- `db.myCollection.insertOne()`: Create a new collection
+- `db.<collection>.find()`
+- `db.<collection>.find().pretty(): Show up to 20 matches`
 - `db["3test"].find()`, `db.getCollection: Alternate collection syntax: ("3test").find()`
-- `db.collection.find().pretty: `Show up to 20 matches
+- `db.myCollection.insertOne()`: Create a new collection
+
+- `db.help()`: Show help for an db object
+- `db.<collection>.help()`: Show help for an collection object
 - `mongo --help:`Call help from shell
 - `help`: Call help from Mongo cli
+
 - `db.updateUser`: Show help for a method -- no parens
 
 <hr>
